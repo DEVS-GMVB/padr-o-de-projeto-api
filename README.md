@@ -7,7 +7,7 @@ Talvez em projetos pequenos você não perceba os problemas que isso pode te cau
 
 
 ## Estrutura de pastas
-<script src="https://gist.github.com/diomalta/0ed9d973c982c0fe45a8ea27252aa555.js"></script>
+<img src="https://gist.github.com/diomalta/0ed9d973c982c0fe45a8ea27252aa555.js">
 
 
 
