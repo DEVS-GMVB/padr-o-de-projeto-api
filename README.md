@@ -27,6 +27,9 @@ src
 └───types           # Tipagem (d.ts) para Typescript
 
 ```
+##  solid
+“Uma classe deve ter um, e apenas um, motivo para ser modificada”
+![solid](https://user-images.githubusercontent.com/32857539/130803413-4faffed5-7329-41be-ab1d-a86e6130ffcc.png)
 
 
 
