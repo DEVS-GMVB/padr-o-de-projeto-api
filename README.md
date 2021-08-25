@@ -27,12 +27,36 @@ src
 └───types           # Tipagem (d.ts) para Typescript
 
 ```
-##  solid
+##  Solid:
 “Uma classe deve ter um, e apenas um, motivo para ser modificada”
 ![solid](https://user-images.githubusercontent.com/32857539/130803413-4faffed5-7329-41be-ab1d-a86e6130ffcc.png)
 
+## Controllers
+O controle deve se preocupar em aceitar a solicitação, repassar para o serviço de domínio correto processe a solicitação e entregue a resposta ao cliente.
 
+``` bash
 
- 
- 
+route.post('/client', async (req, res, next) => {
+  try {
+    const response = await ClientService.create(req.body);
+    return res.status(201).json(response);
+  } catch (e) {
+    return next(e);
+  }
+});
+```
+ ## Services:
+Essa camada é um design pattern que ajuda a abstrair suas regras de negócio, deixando sua controller mais limpa e com a responsabilidade única.
+ ``` bash
+ async create(client) { 
+  validators.client(client);
+
+  const clientRecord = await ClientModel.create(client);  
+  delete clientRecord.password;  
+  
+  const partyRecord = await PartyService.create(clientRecord);
+
+  return { client: clientRecord, party: partyRecord };  
+}
+ ```
   
