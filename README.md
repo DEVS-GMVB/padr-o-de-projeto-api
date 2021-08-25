@@ -8,14 +8,14 @@ Talvez em projetos pequenos você não perceba os problemas que isso pode te cau
 
 ## Estrutura de pastas
 src
-│   app.js          # Classe app
-│   server.js       # Server para iniciar o app
-└───api             
-  └───controllers   # Funções da controllers do express route
-  └───models        # Modelos do banco de dados
-  └───services      # Regras de negócio
-  └───subscribers   # Eventos async 
-  └───repositories* # Query builders 
+│app.js          # Classe app
+│server.js       # Server para iniciar o app
+api             
+ └───controllers   # Funções da controllers do express route
+ └───models        # Modelos do banco de dados
+ └───services      # Regras de negócio
+ └───subscribers   # Eventos async 
+ └───repositories* # Query builders 
 └───config          # Configuração das variaveis de ambiente
 └───jobs            # Tarefas de rotinas
 └───loaders         # Modulos para utilizado no app
