@@ -17,5 +17,9 @@
     "dotenv": "^10.0.0",
     "esm": "^3.2.25",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
   }
 }

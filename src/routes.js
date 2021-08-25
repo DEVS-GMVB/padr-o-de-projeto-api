@@ -1,12 +1,13 @@
 const express = require('express')
 const router = express.Router();
 const loginController = require('./api/controllers/loginController')
-router.get('/',(req, res)=>{
-    res.send('oi')
-})
+
+//Autenticação route
 router.post('/login',loginController.logar)
-// router.get('/create',loginController.read)
-// router.get('/update',loginController.read)
-// router.get('/login',loginController.read)
+
+// router.get('/user',loginController.read)
+// router.post('/user',loginController.create)
+// router.put('/user',loginController.update)
+// router.delete('/user',loginController.delete)
 
 module.exports = router
